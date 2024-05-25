@@ -1,3 +1,12 @@
+
+body.background{
+    background-image: url('img/logo\ definiti.jpg');
+    background-size: 150px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255); /* Adiciona um tom escuro ao fundo */
+}
+
 body {
 color: hsl(271, 73%, 77%);
 background-color: black;
