@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
+<title>Resultados</title>
 <style>
     body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-image: url('img/backgorund1.jpg '); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+        background-image: url('img/backgorund1.jpg');
         background-size: cover;
         background-position: center;
-        height: 100vh; /* Isso garante que a imagem de fundo ocupe toda a tela */
+        height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -24,7 +25,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Altere o último valor (0.5) para ajustar a opacidade do preto */
     }
 
     .content {
@@ -32,18 +32,75 @@
         text-align: center;
         color: white;
     }
+
+    nav {
+        text-align: center;
+        margin-bottom: 40px;
+        z-index: 2; /* Ensure navbar is above overlay */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255); /* Changed to white for better contrast */
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .image {
+        margin: 0 10px;
+    }
+
+    .image img {
+        width: 550px;
+        height: 300px;
+    }
 </style>
 </head>
 <body>
     <div class="overlay"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+        </ul>
+    </nav>
     <div class="content">
+        <!-- Conteúdo adicional pode ser adicionado aqui -->
     </div>
     <section class="container">
         <div class="card">
             <div class="image">
-                <img src="img/customizacao-tenis-from-ghetto-2.jpg" alt="">
+                <img src="img/customizacao-tenis-from-ghetto-2.jpg" alt="" width="550" height="300">>
+            </div>
+            <div class="image">
+                <img src="img/customizacao-tenis-from-ghetto-5.jpg" alt="" width="550" height="300">>
+            </div>
+            <div class="image">
+                <img src="img/customizacao-tenis-from-ghetto.jpg" alt=""width="550" height="300">>
             </div>
         </div>
     </section>
 </body>
 </html>
+
+
